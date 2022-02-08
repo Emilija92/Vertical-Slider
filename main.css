@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,19 @@
 }
 body {
     height: 100vh;
+    font-family: 'Comfortaa', cursive;
 }
-
+h1 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 12px rgb(87, 87, 87);
+    font-family: 'Kaushan Script', cursive;
+}
+p {
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 8px rgb(87, 87, 87);
+}
 .slider-container {
     position: relative;
     overflow: hidden;
@@ -19,6 +31,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform .5s ease-in-out;
 }
 .left-slide > div {
     height: 100%;
@@ -39,6 +52,7 @@ body {
     top: 0;
     left: 35%;
     width: 65%;
+    transition: transform .5s ease-in-out;
 }
 .right-slide > div {
     background-repeat: no-repeat;
